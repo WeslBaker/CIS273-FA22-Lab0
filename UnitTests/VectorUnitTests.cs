@@ -97,19 +97,19 @@ namespace UnitTests
             Vector.Vector v1 = new Vector.Vector() { X = 4.0, Y = 3.0 };
             Vector.Vector v2 = new Vector.Vector() { X = 5.0, Y = 10.0 };
             double dotProduct = 50;
-            Assert.AreEqual(dotProduct, v1.Dot(v2));
+            Assert.AreEqual(dotProduct, Vector.Vector.Dot(v1, v2));
             Assert.AreEqual(dotProduct, v1 * v2);
 
             v1 = new Vector.Vector() { X = -1.0, Y = 3.0 };
             v2 = new Vector.Vector() { X = 4.0, Y = -5.0 };
             Vector.Vector sum = new Vector.Vector() { X = 3, Y = -2 };
-            Assert.AreEqual(sum, v1.Add(v2));
+            Assert.AreEqual(sum, Vector.Vector.Add(v1, v2));
             Assert.AreEqual(sum, v1 + v2);
 
             v1 = new Vector.Vector() { X = -1.0, Y = 3.0 };
             v2 = new Vector.Vector() { X = 4.0, Y = -5.0 };
             Vector.Vector difference = new Vector.Vector() { X = -5.0, Y = 8.0 };
-            Assert.AreEqual(difference, v1.Subtract(v2));
+            Assert.AreEqual(difference, Vector.Vector.Subtract(v1, v2));
             Assert.AreEqual(difference, v1 - v2);
 
         }
