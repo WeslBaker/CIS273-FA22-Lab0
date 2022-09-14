@@ -98,11 +98,11 @@ namespace UnitTests
 
         private static void TestArraysForEquality(int[] expectedResult, int[] result)
         {
-            Assert.AreEqual(result.Length, expectedResult.Length);
+            Assert.AreEqual(expectedResult.Length, result.Length);
 
             for (int i = 0; i < expectedResult.Length; i++)
             {
-                Assert.AreEqual(result[i], expectedResult[i]);
+                Assert.AreEqual(expectedResult[i], result[i]);
             }
         }
     }
