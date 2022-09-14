@@ -7,14 +7,13 @@ namespace Uno
         public List<Card> Hand { get; set; }
         public Player()
 		{
-            Name = "";
-            Hand = new List<Card>();
-
-        }
+			Name = "";
+			Hand = new List<Card>();
+		}
 
         public bool HasPlayableCard(Card card)
         {
-            foreach(var handCard in Hand)
+            foreach (var handCard in Hand)
             {
                 if (Card.PlaysOn(handCard, card))
                 {
@@ -23,9 +22,8 @@ namespace Uno
             }
             return false;
         }
-
         public Card GetFirstPlayableCard(Card card)
-        {
+		{
             foreach (var handCard in Hand)
             {
                 if (Card.PlaysOn(handCard, card))
@@ -34,7 +32,8 @@ namespace Uno
                 }
             }
             return null;
-        }
+		}
+
         public Color MostCommonColor()
         {
             int numRed = 0;

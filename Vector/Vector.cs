@@ -71,6 +71,7 @@ namespace Vector
         {
             return a.AngleBetween(b);
         }
-    }
+
+	}
 }
 
