@@ -3,7 +3,7 @@ namespace Vector
 {
 	public struct Vector
 	{
-		 public double X { get; set; }
+        public double X { get; set; }
         public double Y { get; set; }
 
         public double Magnitude
@@ -71,6 +71,7 @@ namespace Vector
         {
             return a.AngleBetween(b);
         }
-    }
+
+	}
 }
 
